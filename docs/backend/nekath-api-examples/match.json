@@ -1,0 +1,53 @@
+{
+  "operation": "match",
+  "request": {
+    "method": "GET",
+    "path": "/v1/matches/m_dinuka",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "id": "m_dinuka",
+      "name": "Dinuka",
+      "age": 31,
+      "city": "Colombo",
+      "occupation": "Software engineer",
+      "about": "A synthetic member profile for exploring Nekath. Dinuka enjoys music, travelling, cooking. This is not a real applicant.",
+      "interests": [
+        "Music",
+        "travelling",
+        "cooking"
+      ],
+      "initials": "D",
+      "compatibility": {
+        "method": "Traditional compatibility · demo",
+        "checks": [
+          {
+            "name": "Dina",
+            "result": "Supportive",
+            "meaning": "The demo inputs pass this check."
+          },
+          {
+            "name": "Gana",
+            "result": "Review",
+            "meaning": "Some traditional conditions need consideration."
+          },
+          {
+            "name": "Rajju",
+            "result": "Review",
+            "meaning": "This sample outcome should be read with the complete method."
+          }
+        ]
+      },
+      "source": "mock"
+    },
+    "meta": {
+      "requestId": "req_1794768149835-y58wckq1",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

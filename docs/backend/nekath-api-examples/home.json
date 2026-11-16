@@ -1,0 +1,71 @@
+{
+  "operation": "home",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1794768149791-y15lolqh/home",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "profile": {
+        "name": "Nimali Perera",
+        "dob": "1994-08-19",
+        "time": "06:42",
+        "place": "Kandy",
+        "isExample": true,
+        "placeId": "kandy",
+        "id": "p_1794768149791-y15lolqh",
+        "revision": 1,
+        "archived": false,
+        "createdAt": "2026-11-16T00:00:00.000Z"
+      },
+      "summary": {
+        "lagna": "Thula",
+        "rashi": "Vrishabha",
+        "nakshatra": "Rohini",
+        "lagnaLord": "Shukra",
+        "moonLord": "Chandra"
+      },
+      "entitlements": {
+        "plan": "free",
+        "freeProfileEligible": false,
+        "questionCredits": 0,
+        "readingsUnlocked": false
+      },
+      "categories": [
+        {
+          "id": "love",
+          "title": "Love & Marriage",
+          "description": "Relationships, communication and shared plans",
+          "locked": false
+        },
+        {
+          "id": "career",
+          "title": "Career",
+          "description": "Work, learning and professional direction",
+          "locked": false
+        },
+        {
+          "id": "health",
+          "title": "Wellbeing",
+          "description": "Reflection and routines; no medical predictions",
+          "locked": false
+        },
+        {
+          "id": "dosha",
+          "title": "Graha Dosha",
+          "description": "Traditional checks and their qualifying factors",
+          "locked": false
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "req_1794768149797-drzpc9xt",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

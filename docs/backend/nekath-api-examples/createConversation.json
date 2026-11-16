@@ -1,0 +1,32 @@
+{
+  "operation": "createConversation",
+  "request": {
+    "method": "POST",
+    "path": "/v1/conversations",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_20"
+    },
+    "body": {
+      "profileId": "p_1794768149791-y15lolqh",
+      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi"
+    }
+  },
+  "response": {
+    "data": {
+      "id": "chat_1794768149819-0ilqds0i",
+      "profileId": "p_1794768149791-y15lolqh",
+      "profileName": "Nimali Perera",
+      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+      "title": "New conversation",
+      "messages": [],
+      "createdAt": "2026-11-16T00:00:00.000Z"
+    },
+    "meta": {
+      "requestId": "req_1794768149819-h4lz5cvx",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

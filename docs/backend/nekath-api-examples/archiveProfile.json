@@ -1,0 +1,35 @@
+{
+  "operation": "archiveProfile",
+  "request": {
+    "method": "PATCH",
+    "path": "/v1/profiles/p_1794768149791-y15lolqh/archive",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_34"
+    },
+    "body": {
+      "archived": true
+    }
+  },
+  "response": {
+    "data": {
+      "name": "Nimali Updated",
+      "dob": "1994-08-19",
+      "time": "06:42",
+      "place": "Kandy",
+      "isExample": true,
+      "placeId": "kandy",
+      "id": "p_1794768149791-y15lolqh",
+      "revision": 2,
+      "archived": true,
+      "createdAt": "2026-11-16T00:00:00.000Z",
+      "freeCategory": "love"
+    },
+    "meta": {
+      "requestId": "req_1794768149846-ztzmrob9",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

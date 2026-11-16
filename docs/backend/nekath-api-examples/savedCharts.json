@@ -1,0 +1,27 @@
+{
+  "operation": "savedCharts",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1794768149791-y15lolqh/saved-charts",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": [
+      {
+        "id": "saved_1794768149801-jwiyqhnm",
+        "profileId": "p_1794768149791-y15lolqh",
+        "snapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+        "title": "Original birth chart",
+        "createdAt": "2026-11-16T00:00:00.000Z"
+      }
+    ],
+    "meta": {
+      "requestId": "req_1794768149803-ev5pdd47",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "operation": "favorite",
+  "request": {
+    "method": "POST",
+    "path": "/v1/favorites",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_29"
+    },
+    "body": {
+      "matchId": "m_dinuka",
+      "saved": true
+    }
+  },
+  "response": {
+    "data": {
+      "matchId": "m_dinuka",
+      "saved": true
+    },
+    "meta": {
+      "requestId": "req_1794768149837-rispvx2r",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

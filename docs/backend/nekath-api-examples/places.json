@@ -1,0 +1,28 @@
+{
+  "operation": "places",
+  "request": {
+    "method": "GET",
+    "path": "/v1/places?query=Kandy",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": [
+      {
+        "id": "kandy",
+        "name": "Kandy",
+        "country": "Sri Lanka",
+        "timezone": "Asia/Colombo",
+        "latitude": 7.2906,
+        "longitude": 80.6337
+      }
+    ],
+    "meta": {
+      "requestId": "req_1794768149756-livjqv3s",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "operation": "createPurchase",
+  "request": {
+    "method": "POST",
+    "path": "/v1/purchases",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_15"
+    },
+    "body": {
+      "productId": "graha"
+    }
+  },
+  "response": {
+    "data": {
+      "id": "order_1794768149810-0v4avq38",
+      "product": {
+        "id": "graha",
+        "title": "Graha",
+        "amountMinor": 99000,
+        "currency": "LKR",
+        "credits": 3,
+        "description": [
+          "All four reading categories",
+          "Dasha periods and chart details",
+          "3 question credits",
+          "Matrimony access after demo verification"
+        ]
+      },
+      "status": "awaiting_confirmation",
+      "createdAt": "2026-11-16T00:00:00.000Z"
+    },
+    "meta": {
+      "requestId": "req_1794768149810-j63hrpb7",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

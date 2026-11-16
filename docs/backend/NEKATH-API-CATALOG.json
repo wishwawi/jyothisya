@@ -1,0 +1,192 @@
+{
+  "version": "v1-proposed",
+  "transport": "mock-only",
+  "operations": {
+    "bootstrap": {
+      "method": "GET",
+      "path": "/bootstrap",
+      "example": "nekath-api-examples/bootstrap.json"
+    },
+    "places": {
+      "method": "GET",
+      "path": "/places",
+      "example": "nekath-api-examples/places.json"
+    },
+    "preferences": {
+      "method": "PATCH",
+      "path": "/me/preferences",
+      "write": true,
+      "example": "nekath-api-examples/preferences.json"
+    },
+    "createProfile": {
+      "method": "POST",
+      "path": "/profiles",
+      "write": true,
+      "example": "nekath-api-examples/createProfile.json"
+    },
+    "profiles": {
+      "method": "GET",
+      "path": "/profiles",
+      "example": "nekath-api-examples/profiles.json"
+    },
+    "selectProfile": {
+      "method": "POST",
+      "path": "/me/active-profile",
+      "write": true,
+      "example": "nekath-api-examples/selectProfile.json"
+    },
+    "home": {
+      "method": "GET",
+      "path": "/profiles/:profileId/home",
+      "example": "nekath-api-examples/home.json"
+    },
+    "chart": {
+      "method": "GET",
+      "path": "/profiles/:profileId/charts/:kind",
+      "example": "nekath-api-examples/chart.json"
+    },
+    "saveChart": {
+      "method": "POST",
+      "path": "/profiles/:profileId/saved-charts",
+      "write": true,
+      "example": "nekath-api-examples/saveChart.json"
+    },
+    "savedCharts": {
+      "method": "GET",
+      "path": "/profiles/:profileId/saved-charts",
+      "example": "nekath-api-examples/savedCharts.json"
+    },
+    "removeSavedChart": {
+      "method": "DELETE",
+      "path": "/saved-charts/:id",
+      "write": true,
+      "example": "nekath-api-examples/removeSavedChart.json"
+    },
+    "createReading": {
+      "method": "POST",
+      "path": "/readings",
+      "write": true,
+      "example": "nekath-api-examples/createReading.json"
+    },
+    "reading": {
+      "method": "GET",
+      "path": "/readings/:id",
+      "example": "nekath-api-examples/reading.json"
+    },
+    "products": {
+      "method": "GET",
+      "path": "/billing/products",
+      "example": "nekath-api-examples/products.json"
+    },
+    "createPurchase": {
+      "method": "POST",
+      "path": "/purchases",
+      "write": true,
+      "example": "nekath-api-examples/createPurchase.json"
+    },
+    "purchase": {
+      "method": "GET",
+      "path": "/purchases/:id",
+      "example": "nekath-api-examples/purchase.json"
+    },
+    "verifyPurchase": {
+      "method": "POST",
+      "path": "/purchases/:id/verify",
+      "write": true,
+      "example": "nekath-api-examples/verifyPurchase.json"
+    },
+    "cancelPurchase": {
+      "method": "POST",
+      "path": "/purchases/:id/cancel",
+      "write": true,
+      "example": "nekath-api-examples/cancelPurchase.json"
+    },
+    "purchases": {
+      "method": "GET",
+      "path": "/purchases",
+      "example": "nekath-api-examples/purchases.json"
+    },
+    "createConversation": {
+      "method": "POST",
+      "path": "/conversations",
+      "write": true,
+      "example": "nekath-api-examples/createConversation.json"
+    },
+    "sendMessage": {
+      "method": "POST",
+      "path": "/conversations/:conversationId/messages",
+      "write": true,
+      "example": "nekath-api-examples/sendMessage.json"
+    },
+    "conversation": {
+      "method": "GET",
+      "path": "/conversations/:id",
+      "example": "nekath-api-examples/conversation.json"
+    },
+    "conversations": {
+      "method": "GET",
+      "path": "/profiles/:profileId/conversations",
+      "example": "nekath-api-examples/conversations.json"
+    },
+    "daily": {
+      "method": "GET",
+      "path": "/profiles/:profileId/daily",
+      "example": "nekath-api-examples/daily.json"
+    },
+    "submitVerification": {
+      "method": "POST",
+      "path": "/me/verification",
+      "write": true,
+      "example": "nekath-api-examples/submitVerification.json"
+    },
+    "verification": {
+      "method": "GET",
+      "path": "/me/verification",
+      "example": "nekath-api-examples/verification.json"
+    },
+    "matches": {
+      "method": "GET",
+      "path": "/matches",
+      "example": "nekath-api-examples/matches.json"
+    },
+    "match": {
+      "method": "GET",
+      "path": "/matches/:id",
+      "example": "nekath-api-examples/match.json"
+    },
+    "favorite": {
+      "method": "POST",
+      "path": "/favorites",
+      "write": true,
+      "example": "nekath-api-examples/favorite.json"
+    },
+    "favorites": {
+      "method": "GET",
+      "path": "/favorites",
+      "example": "nekath-api-examples/favorites.json"
+    },
+    "interest": {
+      "method": "POST",
+      "path": "/interests",
+      "write": true,
+      "example": "nekath-api-examples/interest.json"
+    },
+    "interests": {
+      "method": "GET",
+      "path": "/interests",
+      "example": "nekath-api-examples/interests.json"
+    },
+    "updateProfile": {
+      "method": "PATCH",
+      "path": "/profiles/:profileId",
+      "write": true,
+      "example": "nekath-api-examples/updateProfile.json"
+    },
+    "archiveProfile": {
+      "method": "PATCH",
+      "path": "/profiles/:profileId/archive",
+      "write": true,
+      "example": "nekath-api-examples/archiveProfile.json"
+    }
+  }
+}

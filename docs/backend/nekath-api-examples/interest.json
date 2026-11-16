@@ -1,0 +1,28 @@
+{
+  "operation": "interest",
+  "request": {
+    "method": "POST",
+    "path": "/v1/interests",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_31"
+    },
+    "body": {
+      "matchId": "m_dinuka"
+    }
+  },
+  "response": {
+    "data": {
+      "id": "interest_1794768149841-optzqchh",
+      "matchId": "m_dinuka",
+      "status": "sent",
+      "createdAt": "2026-11-16T00:00:03.000Z"
+    },
+    "meta": {
+      "requestId": "req_1794768149841-vhspxsy5",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "operation": "interests",
+  "request": {
+    "method": "GET",
+    "path": "/v1/interests",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": [
+      {
+        "id": "interest_1794768149841-optzqchh",
+        "matchId": "m_dinuka",
+        "status": "sent",
+        "createdAt": "2026-11-16T00:00:03.000Z"
+      }
+    ],
+    "meta": {
+      "requestId": "req_1794768149842-rhrk3wxu",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

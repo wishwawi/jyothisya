@@ -1,0 +1,23 @@
+{
+  "operation": "removeSavedChart",
+  "request": {
+    "method": "DELETE",
+    "path": "/v1/saved-charts/saved_1794768149801-jwiyqhnm",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_11"
+    },
+    "body": {}
+  },
+  "response": {
+    "data": {
+      "removed": true
+    },
+    "meta": {
+      "requestId": "req_1794768149804-9qid803q",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

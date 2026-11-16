@@ -1,0 +1,33 @@
+{
+  "operation": "submitVerification",
+  "request": {
+    "method": "POST",
+    "path": "/v1/me/verification",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_25"
+    },
+    "body": {
+      "documentType": "NIC",
+      "documentFixtureId": "demo-document",
+      "selfieFixtureId": "demo-selfie",
+      "demoOutcome": "verified"
+    }
+  },
+  "response": {
+    "data": {
+      "id": "verification_1794768149830-ehiqlbhe",
+      "documentType": "NIC",
+      "status": "pending",
+      "submittedAt": "2026-11-16T00:00:00.000Z",
+      "reviewReadyAt": 1794787202500,
+      "outcome": "verified"
+    },
+    "meta": {
+      "requestId": "req_1794768149831-pu61niy9",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

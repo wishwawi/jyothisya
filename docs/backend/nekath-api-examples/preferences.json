@@ -1,0 +1,27 @@
+{
+  "operation": "preferences",
+  "request": {
+    "method": "PATCH",
+    "path": "/v1/me/preferences",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_3"
+    },
+    "body": {
+      "language": "en",
+      "timingPlaceId": "colombo"
+    }
+  },
+  "response": {
+    "data": {
+      "language": "en",
+      "timingPlaceId": "colombo"
+    },
+    "meta": {
+      "requestId": "req_1794768149757-cqel9j42",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

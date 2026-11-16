@@ -1,0 +1,99 @@
+{
+  "operation": "daily",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1794768149791-y15lolqh/daily?localDate=2026-11-16&placeId=colombo",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "id": "daily_p_1794768149791-y15lolqh_1_2026-11-16_colombo",
+      "profileId": "p_1794768149791-y15lolqh",
+      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+      "localDate": "2026-11-16",
+      "place": {
+        "id": "colombo",
+        "name": "Colombo",
+        "country": "Sri Lanka",
+        "timezone": "Asia/Colombo",
+        "latitude": 6.9271,
+        "longitude": 79.8612
+      },
+      "headline": "Balance progress with preparation",
+      "body": "Take time to listen, revisit a plan and prepare for a conversation that matters. This daily reading combines a natal reference, life-period theme and dated timing factors from the demo service.",
+      "assessment": "mixed",
+      "lifePeriod": {
+        "main": "Budha",
+        "sub": "Shukra"
+      },
+      "panchanga": [
+        {
+          "name": "Lunar day",
+          "term": "Tithi",
+          "value": "Shukla Shashthi"
+        },
+        {
+          "name": "Weekday",
+          "term": "Vara",
+          "value": "Monday"
+        },
+        {
+          "name": "Lunar mansion",
+          "term": "Nakshatra",
+          "value": "Rohini"
+        },
+        {
+          "name": "Calendar combination",
+          "term": "Yoga",
+          "value": "Siddha"
+        },
+        {
+          "name": "Half lunar day",
+          "term": "Karana",
+          "value": "Bava"
+        }
+      ],
+      "intervals": [
+        {
+          "id": "helpful",
+          "startAt": "2026-11-16T04:50:00.000Z",
+          "endAt": "2026-11-16T05:35:00.000Z",
+          "assessment": "supportive",
+          "activity": "Planning and conversations",
+          "factors": [
+            {
+              "term": "Hora",
+              "meaning": "A planetary-hour factor supports the selected activity in this fixture."
+            },
+            {
+              "term": "Gochara",
+              "meaning": "A second sample factor is supportive; this is not a guarantee of outcome."
+            }
+          ]
+        },
+        {
+          "id": "care",
+          "startAt": "2026-11-16T08:00:00.000Z",
+          "endAt": "2026-11-16T09:30:00.000Z",
+          "assessment": "care",
+          "activity": "Allow more time before commitments",
+          "factors": [
+            {
+              "term": "Rahu Kalaya",
+              "meaning": "A cautionary calendar interval under the demo rule pack."
+            }
+          ]
+        }
+      ],
+      "source": "mock"
+    },
+    "meta": {
+      "requestId": "req_1794768149829-tb9hjt26",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

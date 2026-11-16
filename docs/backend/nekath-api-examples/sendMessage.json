@@ -1,0 +1,51 @@
+{
+  "operation": "sendMessage",
+  "request": {
+    "method": "POST",
+    "path": "/v1/conversations/chat_1794768149819-0ilqds0i/messages",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_21"
+    },
+    "body": {
+      "text": "What does Lagna mean?"
+    }
+  },
+  "response": {
+    "data": {
+      "conversation": {
+        "id": "chat_1794768149819-0ilqds0i",
+        "profileId": "p_1794768149791-y15lolqh",
+        "profileName": "Nimali Perera",
+        "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+        "title": "What does Lagna mean?",
+        "messages": [
+          {
+            "id": "msg_1794768149821-s52qs540",
+            "role": "user",
+            "text": "What does Lagna mean?",
+            "createdAt": "2026-11-16T00:00:00.000Z",
+            "evidenceRefs": []
+          },
+          {
+            "id": "msg_1794768149821-15fw4dek",
+            "role": "assistant",
+            "text": "Lagna is the rising sign at a defined birth moment and place. This demo snapshot uses Thula as its reference. Houses are read in relation to that reference.",
+            "createdAt": "2026-11-16T00:00:00.000Z",
+            "evidenceRefs": [
+              "chart_p_1794768149791-y15lolqh_1_rasi"
+            ]
+          }
+        ],
+        "createdAt": "2026-11-16T00:00:00.000Z"
+      },
+      "creditsRemaining": 2
+    },
+    "meta": {
+      "requestId": "req_1794768149821-aris5t9p",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

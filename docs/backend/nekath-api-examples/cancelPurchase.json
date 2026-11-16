@@ -1,0 +1,36 @@
+{
+  "operation": "cancelPurchase",
+  "request": {
+    "method": "POST",
+    "path": "/v1/purchases/order_1794768149814-2n1t3zx5/cancel",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_18"
+    },
+    "body": {}
+  },
+  "response": {
+    "data": {
+      "id": "order_1794768149814-2n1t3zx5",
+      "product": {
+        "id": "questions_5",
+        "title": "5 more questions",
+        "amountMinor": 49000,
+        "currency": "LKR",
+        "credits": 5,
+        "description": [
+          "Add five question credits",
+          "Existing charts and readings stay available"
+        ]
+      },
+      "status": "cancelled",
+      "createdAt": "2026-11-16T00:00:00.000Z"
+    },
+    "meta": {
+      "requestId": "req_1794768149816-mys29g4a",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

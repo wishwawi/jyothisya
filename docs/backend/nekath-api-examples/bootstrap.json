@@ -1,0 +1,36 @@
+{
+  "operation": "bootstrap",
+  "request": {
+    "method": "GET",
+    "path": "/v1/bootstrap",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "account": {
+        "id": "demo_account",
+        "name": "Nekath member"
+      },
+      "profiles": [],
+      "activeId": null,
+      "preferences": {
+        "language": "en",
+        "timingPlaceId": "colombo"
+      },
+      "entitlements": {
+        "plan": "free",
+        "freeProfileEligible": true,
+        "questionCredits": 0,
+        "readingsUnlocked": false
+      }
+    },
+    "meta": {
+      "requestId": "req_1794768149753-rhb5ev1e",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}
