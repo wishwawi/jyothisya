@@ -1,0 +1,22 @@
+{
+  "name": "nekath",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@4.6.0+sha224.acd0786f07ffc6c933940eb65fc1d627131ddf5455bddcc295dc90fd",
+  "workspaces": [
+    "mobile"
+  ],
+  "scripts": {
+    "start": "yarn workspace jyothisya-mobile start",
+    "ios": "yarn workspace jyothisya-mobile ios",
+    "android": "yarn workspace jyothisya-mobile android",
+    "web": "yarn workspace jyothisya-mobile web",
+    "typecheck": "yarn workspace jyothisya-mobile typecheck",
+    "lint": "yarn workspace jyothisya-mobile lint",
+    "test": "yarn workspace jyothisya-mobile test",
+    "format:check": "yarn workspace jyothisya-mobile format:check",
+    "api:examples": "yarn workspace jyothisya-mobile api:examples",
+    "export:ios": "yarn workspace jyothisya-mobile export:ios",
+    "check": "yarn typecheck && yarn lint && yarn test && yarn format:check"
+  }
+}
