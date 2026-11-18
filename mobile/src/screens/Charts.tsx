@@ -70,6 +70,38 @@ function ChartContent({ chart }: { chart: ChartSnapshot }) {
       </Txt>
       <Chart chart={chart} />
       <Button
+        title="Check birth-time sensitivity"
+        secondary
+        icon="time-outline"
+        onPress={() =>
+          router.push({
+            pathname: "/birth-time-sensitivity",
+            params: { profileId: chart.profileId },
+          })
+        }
+      />
+      <Button
+        title="Explore life timeline"
+        secondary
+        onPress={() =>
+          router.push({
+            pathname: "/timeline",
+            params: { profileId: chart.profileId },
+          })
+        }
+      />
+      <Button
+        title="Create a PDF report"
+        secondary
+        icon="document-text-outline"
+        onPress={() =>
+          router.push({
+            pathname: "/reports",
+            params: { profileId: chart.profileId },
+          })
+        }
+      />
+      <Button
         title={saved ? "Chart saved" : "Save this chart"}
         secondary
         icon={saved ? "bookmark" : "bookmark-outline"}

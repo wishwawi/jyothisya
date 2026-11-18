@@ -10,7 +10,7 @@
   "response": {
     "data": [
       {
-        "id": "order_1794768149814-2n1t3zx5",
+        "id": "order_1795025764885-0z7jfkbg",
         "product": {
           "id": "questions_5",
           "title": "5 more questions",
@@ -26,7 +26,7 @@
         "createdAt": "2026-11-16T00:00:00.000Z"
       },
       {
-        "id": "order_1794768149810-0v4avq38",
+        "id": "order_1795025764876-x4d4p2f0",
         "product": {
           "id": "graha",
           "title": "Graha",
@@ -36,6 +36,8 @@
           "description": [
             "All four reading categories",
             "Dasha periods and chart details",
+            "Life timeline and prediction journal",
+            "Create and export PDF reports",
             "3 question credits",
             "Matrimony access after demo verification"
           ]
@@ -45,7 +47,7 @@
       }
     ],
     "meta": {
-      "requestId": "req_1794768149817-bngxjbvr",
+      "requestId": "req_1795025764889-r416yggw",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

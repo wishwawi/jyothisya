@@ -2,16 +2,16 @@
   "operation": "daily",
   "request": {
     "method": "GET",
-    "path": "/v1/profiles/p_1794768149791-y15lolqh/daily?localDate=2026-11-16&placeId=colombo",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/daily?localDate=2026-11-16&placeId=colombo",
     "headers": {
       "Authorization": "Bearer <access-token>"
     }
   },
   "response": {
     "data": {
-      "id": "daily_p_1794768149791-y15lolqh_1_2026-11-16_colombo",
-      "profileId": "p_1794768149791-y15lolqh",
-      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+      "id": "daily_p_1795025764849-0508hp4p_1_2026-11-16_colombo",
+      "profileId": "p_1795025764849-0508hp4p",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
       "localDate": "2026-11-16",
       "place": {
         "id": "colombo",
@@ -90,7 +90,7 @@
       "source": "mock"
     },
     "meta": {
-      "requestId": "req_1794768149829-tb9hjt26",
+      "requestId": "req_1795025764914-3ziiwso5",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

@@ -2,7 +2,7 @@
   "operation": "home",
   "request": {
     "method": "GET",
-    "path": "/v1/profiles/p_1794768149791-y15lolqh/home",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/home",
     "headers": {
       "Authorization": "Bearer <access-token>"
     }
@@ -16,7 +16,7 @@
         "place": "Kandy",
         "isExample": true,
         "placeId": "kandy",
-        "id": "p_1794768149791-y15lolqh",
+        "id": "p_1795025764849-0508hp4p",
         "revision": 1,
         "archived": false,
         "createdAt": "2026-11-16T00:00:00.000Z"
@@ -32,7 +32,12 @@
         "plan": "free",
         "freeProfileEligible": false,
         "questionCredits": 0,
-        "readingsUnlocked": false
+        "readingsUnlocked": false,
+        "features": {
+          "timeline": false,
+          "journal": false,
+          "pdfReports": false
+        }
       },
       "categories": [
         {
@@ -62,7 +67,7 @@
       ]
     },
     "meta": {
-      "requestId": "req_1794768149797-drzpc9xt",
+      "requestId": "req_1795025764856-znsqgh0w",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

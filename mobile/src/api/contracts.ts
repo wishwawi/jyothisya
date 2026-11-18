@@ -3,6 +3,16 @@ import type {
   Category,
   Language,
 } from "../model";
+import type {
+  Tathkala,
+  LifeTimeline,
+  BirthTimeSensitivity,
+  Prediction,
+  PredictionJournal,
+  PredictionOutcome,
+  ReportDocument,
+} from "./insights";
+export type * from "./insights";
 export type { Category, Language };
 export type BirthDraft = LegacyBirthDraft & { placeId?: string };
 export type Plan = "free" | "graha" | "jyotisha";
@@ -28,6 +38,7 @@ export type Entitlements = {
   freeProfileEligible: boolean;
   questionCredits: number;
   readingsUnlocked: boolean;
+  features: { timeline: boolean; journal: boolean; pdfReports: boolean };
 };
 export type Position = {
   bodyId: string;
@@ -226,6 +237,41 @@ export class ApiError extends Error {
   }
 }
 export interface Operations {
+  tathkala: {
+    input: {
+      profileId: string;
+      localDate: string;
+      localTime: string;
+      placeId: string;
+    };
+    output: Tathkala;
+  };
+  timeline: {
+    input: { profileId: string; fromDate: string; toDate: string };
+    output: LifeTimeline;
+  };
+  birthTimeSensitivity: {
+    input: { profileId: string; uncertaintyMinutes: number };
+    output: BirthTimeSensitivity;
+  };
+  journal: { input: { profileId: string }; output: PredictionJournal };
+  createPrediction: {
+    input: {
+      profileId: string;
+      statement: string;
+      criteria: string;
+      targetStart: string;
+      targetEnd: string;
+    };
+    output: Prediction;
+  };
+  reviewPrediction: {
+    input: { id: string; outcome: PredictionOutcome; notes: string };
+    output: Prediction;
+  };
+  reports: { input: { profileId: string }; output: ReportDocument[] };
+  createReport: { input: { profileId: string }; output: ReportDocument };
+  report: { input: { id: string }; output: ReportDocument };
   bootstrap: { input: Record<string, never>; output: Bootstrap };
   places: { input: { query: string }; output: Place[] };
   preferences: { input: Partial<Preferences>; output: Preferences };

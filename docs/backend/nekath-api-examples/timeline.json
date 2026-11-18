@@ -1,0 +1,71 @@
+{
+  "operation": "timeline",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/timeline?fromDate=2010-01-01&toDate=2060-12-31",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "profileId": "p_1795025764849-0508hp4p",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
+      "fromDate": "2010-01-01",
+      "toDate": "2060-12-31",
+      "events": [
+        {
+          "id": "period_budha",
+          "kind": "dasha",
+          "startDate": "2011-01-01",
+          "endDate": "2028-01-01",
+          "title": "Budha mahadasha",
+          "description": "Example main-period dates from the saved demo chart. These are not calculated birth-based periods."
+        },
+        {
+          "id": "saturn_demo",
+          "kind": "transit",
+          "startDate": "2027-01-01",
+          "endDate": "2027-12-31",
+          "title": "Saturn cycle · sample",
+          "description": "Example transit interval to demonstrate the timeline. It is not a calculated Sade Sati period."
+        },
+        {
+          "id": "period_ketu",
+          "kind": "dasha",
+          "startDate": "2028-01-01",
+          "endDate": "2035-01-01",
+          "title": "Ketu mahadasha",
+          "description": "Example main-period dates from the saved demo chart. These are not calculated birth-based periods."
+        },
+        {
+          "id": "eclipse_demo",
+          "kind": "eclipse",
+          "startDate": "2029-06-01",
+          "endDate": "2029-06-01",
+          "title": "Eclipse marker · sample",
+          "description": "A placeholder event illustrating dated factors. This is not an astronomical eclipse date."
+        },
+        {
+          "id": "period_shukra",
+          "kind": "dasha",
+          "startDate": "2035-01-01",
+          "endDate": "2055-01-01",
+          "title": "Shukra mahadasha",
+          "description": "Example main-period dates from the saved demo chart. These are not calculated birth-based periods."
+        }
+      ],
+      "basis": {
+        "source": "mock",
+        "method": "Parashari / Lahiri · demonstration v1",
+        "notice": "Illustrative data only. No planetary positions, transits or birth-time uncertainty have been calculated from your details."
+      }
+    },
+    "meta": {
+      "requestId": "req_1795025764938-s5jwqnp6",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

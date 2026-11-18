@@ -22,6 +22,11 @@ import {
   products,
 } from "./fixtures";
 import { routes } from "./routes";
+import {
+  handleInsight,
+  isInsightOperation,
+  type InsightRequest,
+} from "./insight-operations";
 type ApiRequest = {
   [K in Operation]: { operation: K; input: Input<K> };
 }[Operation];
@@ -120,6 +125,10 @@ export function createMockApi(
   }
   function handle(db: Database, request: ApiRequest): Output<Operation> {
     const { operation: op, input: a } = request;
+    if (isInsightOperation(op))
+      return handleInsight(db, request as InsightRequest, now(), (p) =>
+        chart(db, p, "rasi"),
+      );
     let result: unknown;
     switch (op) {
       case "bootstrap":

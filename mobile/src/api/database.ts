@@ -16,7 +16,10 @@ import type {
   Entitlements,
   Bootstrap,
   Message,
+  Prediction,
+  ReportDocument,
 } from "./contracts";
+import { validateInsightStorage } from "./insight-storage";
 export type Database = {
   version: 2;
   revision: number;
@@ -34,6 +37,8 @@ export type Database = {
   verification: Verification;
   favorites: string[];
   interests: Interest[];
+  predictions: Prediction[];
+  reports: ReportDocument[];
   ledger: { key: string; fingerprint: string; data: unknown }[];
 };
 export function freshDatabase(): Database {
@@ -54,6 +59,8 @@ export function freshDatabase(): Database {
     verification: { status: "not_started" },
     favorites: [],
     interests: [],
+    predictions: [],
+    reports: [],
     ledger: [],
   };
 }
@@ -63,6 +70,11 @@ export function entitlements(db: Database): Entitlements {
     freeProfileEligible: !db.freeProfileClaimed,
     questionCredits: db.questionCredits,
     readingsUnlocked: db.plan !== "free",
+    features: {
+      timeline: db.plan !== "free",
+      journal: db.plan !== "free",
+      pdfReports: db.plan !== "free",
+    },
   };
 }
 export function bootstrap(db: Database): Bootstrap {
@@ -226,5 +238,8 @@ export function decodeDatabase(raw: string): Database {
     !d.profiles.some((p: Profile) => p.id === d.activeId && !p.archived)
   )
     d.activeId = d.profiles.find((p: Profile) => !p.archived)?.id ?? null;
+  if (d.predictions === undefined) d.predictions = [];
+  if (d.reports === undefined) d.reports = [];
+  validateInsightStorage(d);
   return d as Database;
 }

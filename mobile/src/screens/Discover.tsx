@@ -5,6 +5,7 @@ import { useNekath } from "../store";
 import { useAction, useQuery } from "../api/hooks";
 import { localDate, shiftDate } from "../dates";
 import { c } from "../theme";
+import { Tathkala } from "./Tathkala";
 import {
   ActionState,
   Badge,
@@ -22,19 +23,28 @@ import {
 } from "../ui";
 export function Daily() {
   const { state, api } = useNekath();
+  const params = useLocalSearchParams<{ date?: string; profileId?: string }>();
+  const profileId = params.profileId ?? state.activeId ?? "";
   const places = useQuery("daily-places", () =>
     api.call("places", { query: "" }),
   );
   const place = places.data?.find(
     (p) => p.id === state.preferences.timingPlaceId,
   );
-  const [date, setDate] = useState(() => localDate("Asia/Colombo"));
+  const [date, setDate] = useState(
+    () => params.date ?? localDate("Asia/Colombo"),
+  );
+  const [seenParam, setSeenParam] = useState(params.date);
+  if (params.date !== seenParam) {
+    setSeenParam(params.date);
+    if (params.date) setDate(params.date);
+  }
   const action = useAction();
   const query = useQuery(
-    `daily:${state.activeId}:${date}:${state.preferences.timingPlaceId}`,
+    `daily:${profileId}:${date}:${state.preferences.timingPlaceId}`,
     () =>
       api.call("daily", {
-        profileId: state.activeId ?? "",
+        profileId,
         localDate: date,
         placeId: state.preferences.timingPlaceId,
       }),
@@ -42,7 +52,7 @@ export function Daily() {
   return (
     <Page
       title="Daily"
-      subtitle={state.profiles.find((p) => p.id === state.activeId)?.name}
+      subtitle={state.profiles.find((p) => p.id === profileId)?.name}
       action={<ProfileButton />}
     >
       <View style={{ flexDirection: "row", gap: 8 }}>
@@ -196,6 +206,11 @@ export function Daily() {
               title="Refresh daily reading"
               secondary
               onPress={query.reload}
+            />
+            <Tathkala
+              profileId={profileId}
+              date={date}
+              placeId={state.preferences.timingPlaceId}
             />
           </>
         )}

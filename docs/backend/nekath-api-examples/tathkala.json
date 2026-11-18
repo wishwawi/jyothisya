@@ -1,0 +1,294 @@
+{
+  "operation": "tathkala",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/tathkala?localDate=2026-11-16&localTime=12%3A00&placeId=colombo",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "profileId": "p_1795025764849-0508hp4p",
+      "natalSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
+      "localDate": "2026-11-16",
+      "localTime": "12:00",
+      "placeId": "colombo",
+      "timezone": "Asia/Colombo",
+      "momentChart": {
+        "id": "moment_p_1795025764849-0508hp4p_1_2026-11-16_12:00_colombo",
+        "profileId": "p_1795025764849-0508hp4p",
+        "profileRevision": 1,
+        "profileName": "Nimali Perera",
+        "kind": "rasi",
+        "createdAt": "2026-11-18T18:16:04.849Z",
+        "method": {
+          "id": "moment_demo",
+          "label": "Tathkala · sample moment chart",
+          "version": "1"
+        },
+        "summary": {
+          "lagna": "Thula",
+          "rashi": "Vrishabha",
+          "nakshatra": "Rohini",
+          "lagnaLord": "Shukra",
+          "moonLord": "Chandra"
+        },
+        "positions": [
+          {
+            "bodyId": "Su",
+            "label": "Surya",
+            "sign": "Vrischika",
+            "signIndex": 7,
+            "house": 2,
+            "longitudeDeg": 214,
+            "degreeLabel": "14°22′",
+            "nakshatra": "Anuradha",
+            "pada": 1,
+            "retrograde": false
+          },
+          {
+            "bodyId": "Mo",
+            "label": "Chandra",
+            "sign": "Vrishabha",
+            "signIndex": 1,
+            "house": 8,
+            "longitudeDeg": 37.17,
+            "degreeLabel": "9°41′",
+            "nakshatra": "Rohini",
+            "pada": 2,
+            "retrograde": false
+          },
+          {
+            "bodyId": "Ma",
+            "label": "Kuja",
+            "sign": "Makara",
+            "signIndex": 9,
+            "house": 4,
+            "longitudeDeg": 280.34,
+            "degreeLabel": "21°05′",
+            "nakshatra": "Shravana",
+            "pada": 3,
+            "retrograde": false
+          },
+          {
+            "bodyId": "Me",
+            "label": "Budha",
+            "sign": "Vrischika",
+            "signIndex": 7,
+            "house": 2,
+            "longitudeDeg": 223.51,
+            "degreeLabel": "3°18′",
+            "nakshatra": "Vishakha",
+            "pada": 4,
+            "retrograde": false
+          },
+          {
+            "bodyId": "Ju",
+            "label": "Guru",
+            "sign": "Kataka",
+            "signIndex": 3,
+            "house": 10,
+            "longitudeDeg": 106.68,
+            "degreeLabel": "27°50′",
+            "nakshatra": "Ashlesha",
+            "pada": 1,
+            "retrograde": false
+          },
+          {
+            "bodyId": "Ve",
+            "label": "Shukra",
+            "sign": "Vrischika",
+            "signIndex": 7,
+            "house": 2,
+            "longitudeDeg": 229.85,
+            "degreeLabel": "11°33′",
+            "nakshatra": "Jyeshtha",
+            "pada": 2,
+            "retrograde": false
+          },
+          {
+            "bodyId": "Sa",
+            "label": "Shani",
+            "sign": "Kanya",
+            "signIndex": 5,
+            "house": 12,
+            "longitudeDeg": 173.02,
+            "degreeLabel": "16°09′",
+            "nakshatra": "Hasta",
+            "pada": 3,
+            "retrograde": true
+          },
+          {
+            "bodyId": "Ra",
+            "label": "Rahu",
+            "sign": "Kumbha",
+            "signIndex": 10,
+            "house": 5,
+            "longitudeDeg": 326.19,
+            "degreeLabel": "8°47′",
+            "nakshatra": "Dhanishta",
+            "pada": 4,
+            "retrograde": true
+          },
+          {
+            "bodyId": "Ke",
+            "label": "Ketu",
+            "sign": "Simha",
+            "signIndex": 4,
+            "house": 11,
+            "longitudeDeg": 149.36,
+            "degreeLabel": "8°47′",
+            "nakshatra": "Magha",
+            "pada": 1,
+            "retrograde": true
+          },
+          {
+            "bodyId": "La",
+            "label": "Lagna",
+            "sign": "Thula",
+            "signIndex": 6,
+            "house": 1,
+            "longitudeDeg": 182.53,
+            "degreeLabel": "19°02′",
+            "nakshatra": "Swati",
+            "pada": 2,
+            "retrograde": false
+          }
+        ],
+        "cells": [
+          {
+            "signIndex": 0,
+            "house": 7,
+            "bodies": []
+          },
+          {
+            "signIndex": 1,
+            "house": 8,
+            "bodies": [
+              "Mo"
+            ]
+          },
+          {
+            "signIndex": 2,
+            "house": 9,
+            "bodies": []
+          },
+          {
+            "signIndex": 3,
+            "house": 10,
+            "bodies": [
+              "Ju"
+            ]
+          },
+          {
+            "signIndex": 4,
+            "house": 11,
+            "bodies": [
+              "Ke"
+            ]
+          },
+          {
+            "signIndex": 5,
+            "house": 12,
+            "bodies": [
+              "Sa"
+            ]
+          },
+          {
+            "signIndex": 6,
+            "house": 1,
+            "bodies": [
+              "La"
+            ]
+          },
+          {
+            "signIndex": 7,
+            "house": 2,
+            "bodies": [
+              "Su",
+              "Me",
+              "Ve"
+            ]
+          },
+          {
+            "signIndex": 8,
+            "house": 3,
+            "bodies": []
+          },
+          {
+            "signIndex": 9,
+            "house": 4,
+            "bodies": [
+              "Ma"
+            ]
+          },
+          {
+            "signIndex": 10,
+            "house": 5,
+            "bodies": [
+              "Ra"
+            ]
+          },
+          {
+            "signIndex": 11,
+            "house": 6,
+            "bodies": []
+          }
+        ],
+        "dashas": [
+          {
+            "id": "budha",
+            "lord": "Budha",
+            "startDate": "2011-01-01",
+            "endDate": "2028-01-01",
+            "current": true
+          },
+          {
+            "id": "ketu",
+            "lord": "Ketu",
+            "startDate": "2028-01-01",
+            "endDate": "2035-01-01",
+            "current": false
+          },
+          {
+            "id": "shukra",
+            "lord": "Shukra",
+            "startDate": "2035-01-01",
+            "endDate": "2055-01-01",
+            "current": false
+          }
+        ],
+        "source": "mock"
+      },
+      "factors": [
+        {
+          "name": "Moon sign",
+          "value": "Vrishabha · sample",
+          "meaning": "The Moon’s sign at the selected moment belongs here."
+        },
+        {
+          "name": "Tara bala",
+          "value": "Sampat · sample",
+          "meaning": "A traditional birth-star to current-star comparison; not calculated in this demo."
+        },
+        {
+          "name": "Chandrashtama",
+          "value": "Not active · sample",
+          "meaning": "Illustrates whether the Moon occupies the eighth sign from the natal Moon. No alert has been scheduled."
+        }
+      ],
+      "basis": {
+        "source": "mock",
+        "method": "Parashari / Lahiri · demonstration v1",
+        "notice": "Illustrative data only. No planetary positions, transits or birth-time uncertainty have been calculated from your details."
+      }
+    },
+    "meta": {
+      "requestId": "req_1795025764917-289u5r4x",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

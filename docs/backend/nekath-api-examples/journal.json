@@ -1,0 +1,48 @@
+{
+  "operation": "journal",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/predictions",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "profileId": "p_1795025764849-0508hp4p",
+      "entries": [
+        {
+          "id": "prediction_1795025764941-3h1e6uzn",
+          "profileId": "p_1795025764849-0508hp4p",
+          "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
+          "statement": "Complete the training course",
+          "criteria": "Receive a dated completion certificate",
+          "targetStart": "2026-11-17",
+          "targetEnd": "2026-11-18",
+          "timezone": "Asia/Colombo",
+          "createdAt": "2026-11-16T00:00:00.000Z",
+          "review": {
+            "outcome": "partial",
+            "notes": "Completed the lessons, but the final assessment is still outstanding.",
+            "reviewedAt": "2026-11-19T00:00:00.000Z"
+          }
+        }
+      ],
+      "summary": {
+        "total": 1,
+        "reviewed": 1,
+        "hits": 0,
+        "partials": 1,
+        "misses": 0,
+        "due": 0,
+        "scorePercent": 50
+      }
+    },
+    "meta": {
+      "requestId": "req_1795025764945-xzmv6w2s",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

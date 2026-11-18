@@ -8,15 +8,15 @@
       "Idempotency-Key": "example_12"
     },
     "body": {
-      "profileId": "p_1794768149791-y15lolqh",
+      "profileId": "p_1795025764849-0508hp4p",
       "category": "love"
     }
   },
   "response": {
     "data": {
-      "id": "reading_p_1794768149791-y15lolqh_1_love",
-      "profileId": "p_1794768149791-y15lolqh",
-      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+      "id": "reading_p_1795025764849-0508hp4p_1_love",
+      "profileId": "p_1795025764849-0508hp4p",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
       "category": "love",
       "title": "Love & Marriage",
       "headline": "Make room for thoughtful conversations",
@@ -27,19 +27,19 @@
           "id": "natal",
           "term": "Kendara / natal chart",
           "meaning": "The reading refers to Thula Lagna in the selected demo chart.",
-          "basisRef": "chart_p_1794768149791-y15lolqh_1_rasi"
+          "basisRef": "chart_p_1795025764849-0508hp4p_1_rasi"
         },
         {
           "id": "period",
           "term": "Dasha",
           "meaning": "Budha is the main period in this fixture timeline. A life period is different from a daily planetary hour.",
-          "basisRef": "chart_p_1794768149791-y15lolqh_1_rasi"
+          "basisRef": "chart_p_1795025764849-0508hp4p_1_rasi"
         },
         {
           "id": "transit",
           "term": "Gochara",
           "meaning": "Dated planetary movement contributes to a period interpretation. These factors are supplied fixtures, not calculated positions.",
-          "basisRef": "chart_p_1794768149791-y15lolqh_1_rasi"
+          "basisRef": "chart_p_1795025764849-0508hp4p_1_rasi"
         }
       ],
       "window": {
@@ -52,7 +52,7 @@
       "source": "mock"
     },
     "meta": {
-      "requestId": "req_1794768149806-ttbd38to",
+      "requestId": "req_1795025764866-k656ttdp",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

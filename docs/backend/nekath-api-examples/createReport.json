@@ -1,0 +1,82 @@
+{
+  "operation": "createReport",
+  "request": {
+    "method": "POST",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/reports",
+    "headers": {
+      "Authorization": "Bearer <access-token>",
+      "Idempotency-Key": "example_31"
+    },
+    "body": {}
+  },
+  "response": {
+    "data": {
+      "id": "report_1795025764947-wc004tm8",
+      "profileId": "p_1795025764849-0508hp4p",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
+      "title": "Nekath personal report",
+      "createdAt": "2026-11-19T00:00:00.000Z",
+      "localeUsed": "en",
+      "profile": {
+        "name": "Nimali Perera",
+        "dob": "1994-08-19",
+        "time": "06:42",
+        "place": "Kandy",
+        "revision": 1
+      },
+      "basis": {
+        "source": "mock",
+        "method": "Parashari / Lahiri · demonstration v1",
+        "notice": "Illustrative data only. No planetary positions, transits or birth-time uncertainty have been calculated from your details."
+      },
+      "sections": [
+        {
+          "title": "Birth chart · demonstration",
+          "paragraphs": [
+            "Lagna: Thula. Moon sign: Vrishabha. Nakshatra: Rohini.",
+            "Surya: Vrischika, house 2, 14°22′.",
+            "Chandra: Vrishabha, house 8, 9°41′.",
+            "Kuja: Makara, house 4, 21°05′.",
+            "Budha: Vrischika, house 2, 3°18′.",
+            "Guru: Kataka, house 10, 27°50′.",
+            "Shukra: Vrischika, house 2, 11°33′.",
+            "Shani: Kanya, house 12, 16°09′.",
+            "Rahu: Kumbha, house 5, 8°47′.",
+            "Ketu: Simha, house 11, 8°47′.",
+            "Lagna: Thula, house 1, 19°02′."
+          ]
+        },
+        {
+          "title": "Life timeline · demonstration",
+          "paragraphs": [
+            "2011-01-01 to 2028-01-01: Budha mahadasha. Example main-period dates from the saved demo chart. These are not calculated birth-based periods.",
+            "2027-01-01 to 2027-12-31: Saturn cycle · sample. Example transit interval to demonstrate the timeline. It is not a calculated Sade Sati period.",
+            "2028-01-01 to 2035-01-01: Ketu mahadasha. Example main-period dates from the saved demo chart. These are not calculated birth-based periods.",
+            "2029-06-01 to 2029-06-01: Eclipse marker · sample. A placeholder event illustrating dated factors. This is not an astronomical eclipse date.",
+            "2035-01-01 to 2055-01-01: Shukra mahadasha. Example main-period dates from the saved demo chart. These are not calculated birth-based periods."
+          ]
+        },
+        {
+          "title": "Your prediction journal",
+          "paragraphs": [
+            "1 reviewed of 1 recorded. Hits: 0; partials: 1; misses: 0.",
+            "Self-reported score: 50%. Partial results count as one half; unreviewed entries are excluded.",
+            "Complete the training course\nCriteria: Receive a dated completion certificate\nWindow: 2026-11-17 to 2026-11-18 (Asia/Colombo). Recorded: 2026-11-16T00:00:00.000Z. Basis: chart_p_1795025764849-0508hp4p_1_rasi.\nOutcome: partial. Completed the lessons, but the final assessment is still outstanding."
+          ]
+        },
+        {
+          "title": "Birth-time uncertainty",
+          "paragraphs": [
+            "Sensitivity examples are available from Charts. No birth-time uncertainty or rectification has been calculated in this demo."
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "requestId": "req_1795025764947-cyj4ljxy",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

@@ -25,10 +25,14 @@ Use Expo Go with an available simulator and avoid starting a second Metro on 808
 - Plans/credits, checkout approve/pending/decline/cancel, resume and purchase history; no real payment.
 - Matrimony sample document/selfie/review, pending/rejection/resubmit, verified plan access, member filters/details, compatibility examples, saved members and sent/withdrawn demo interests.
 - Loading, error/retry, retained mutation input and network scenario controls in Settings.
+- Daily tathkala sample moment chart, Moon/tara bala/Chandrashtama factors and time/place selection.
+- Premium life timeline with date/type filters and links to Daily; birth-time sensitivity examples for ±5/15/30 minutes.
+- Persistent prediction journal with locked wording/chart basis, future windows, one-time outcomes after the window ends, and self-reported accuracy counts.
+- Premium report snapshots with chart, timeline and journal content; actual native PDF export/share and browser print-to-PDF. Plans remain simulated one-time purchases.
 
 ## API integration
 
-[Complete operation, field and screen mapping](../docs/backend/NEKATH-API-INTEGRATION.md), [34 request/response examples](../docs/backend/NEKATH-API-CATALOG.json) and [typed contracts](src/api/contracts.ts). Mock and unused HTTP transports use the same operation interface; the unused HTTP adapter rejects demo store proofs and sample verification media. The integration document maps the current screen calls, DTOs and local mock state.
+[Complete operation, field and screen mapping](../docs/backend/NEKATH-API-INTEGRATION.md), [43 request/response examples](../docs/backend/NEKATH-API-CATALOG.json), [new feature API guide](../docs/backend/INSIGHTS-API.md) and [typed contracts](src/api/contracts.ts). Mock and unused HTTP transports use the same operation interface; the unused HTTP adapter rejects demo store proofs and sample verification media. The integration document maps the current screen calls, DTOs and local mock state.
 
 Charts are fixture allocations, not calculated horoscopes. Ask has prepared contextual replies, not live AI. Verification uses samples, not actual identity validation. Matching members are synthetic and interests send no external messages. Product prices are demo values. Real auth, calculations, payments, uploads, cloud sync, speech and full Sinhala/Tamil content are not connected. Detailed content falls back to English. Do not use this app as a prediction service.
 

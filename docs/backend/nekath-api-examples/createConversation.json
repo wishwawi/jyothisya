@@ -8,22 +8,22 @@
       "Idempotency-Key": "example_20"
     },
     "body": {
-      "profileId": "p_1794768149791-y15lolqh",
-      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi"
+      "profileId": "p_1795025764849-0508hp4p",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi"
     }
   },
   "response": {
     "data": {
-      "id": "chat_1794768149819-0ilqds0i",
-      "profileId": "p_1794768149791-y15lolqh",
+      "id": "chat_1795025764892-snembotg",
+      "profileId": "p_1795025764849-0508hp4p",
       "profileName": "Nimali Perera",
-      "chartSnapshotId": "chart_p_1794768149791-y15lolqh_1_rasi",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
       "title": "New conversation",
       "messages": [],
       "createdAt": "2026-11-16T00:00:00.000Z"
     },
     "meta": {
-      "requestId": "req_1794768149819-h4lz5cvx",
+      "requestId": "req_1795025764892-wgjxw6s2",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

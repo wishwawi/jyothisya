@@ -94,6 +94,39 @@ async function main() {
     localDate: "2026-11-16",
     placeId: "colombo",
   });
+  await capture("tathkala", {
+    profileId: p.id,
+    localDate: "2026-11-16",
+    localTime: "12:00",
+    placeId: "colombo",
+  });
+  await capture("birthTimeSensitivity", {
+    profileId: p.id,
+    uncertaintyMinutes: 15,
+  });
+  await capture("timeline", {
+    profileId: p.id,
+    fromDate: "2010-01-01",
+    toDate: "2060-12-31",
+  });
+  const prediction = await capture("createPrediction", {
+    profileId: p.id,
+    statement: "Complete the training course",
+    criteria: "Receive a dated completion certificate",
+    targetStart: "2026-11-17",
+    targetEnd: "2026-11-18",
+  });
+  time = Date.parse("2026-11-19T00:00:00Z");
+  await capture("reviewPrediction", {
+    id: prediction.id,
+    outcome: "partial",
+    notes:
+      "Completed the lessons, but the final assessment is still outstanding.",
+  });
+  await capture("journal", { profileId: p.id });
+  const report = await capture("createReport", { profileId: p.id });
+  await capture("reports", { profileId: p.id });
+  await capture("report", { id: report.id });
   await capture("submitVerification", {
     documentType: "NIC",
     documentFixtureId: "demo-document",

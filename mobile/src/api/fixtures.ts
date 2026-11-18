@@ -69,6 +69,8 @@ export const products: Product[] = [
     description: [
       "All four reading categories",
       "Dasha periods and chart details",
+      "Life timeline and prediction journal",
+      "Create and export PDF reports",
       "3 question credits",
       "Matrimony access after demo verification",
     ],

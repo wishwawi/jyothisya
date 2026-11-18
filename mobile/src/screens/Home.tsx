@@ -147,6 +147,42 @@ function HomeContent({ data }: { data: HomeData }) {
         ))}
       </View>
       <Txt heading size={24}>
+        Explore and keep track
+      </Txt>
+      <Button
+        title="Life timeline"
+        secondary
+        icon="time-outline"
+        onPress={() =>
+          router.push({
+            pathname: "/timeline",
+            params: { profileId: data.profile.id },
+          })
+        }
+      />
+      <Button
+        title="Prediction journal"
+        secondary
+        icon="create-outline"
+        onPress={() =>
+          router.push({
+            pathname: "/journal",
+            params: { profileId: data.profile.id },
+          })
+        }
+      />
+      <Button
+        title="PDF reports"
+        secondary
+        icon="document-text-outline"
+        onPress={() =>
+          router.push({
+            pathname: "/reports",
+            params: { profileId: data.profile.id },
+          })
+        }
+      />
+      <Txt heading size={24}>
         What would you like to check?
       </Txt>
       <View accessibilityRole="radiogroup" style={{ gap: 8 }}>

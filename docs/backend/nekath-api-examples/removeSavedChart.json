@@ -2,7 +2,7 @@
   "operation": "removeSavedChart",
   "request": {
     "method": "DELETE",
-    "path": "/v1/saved-charts/saved_1794768149801-jwiyqhnm",
+    "path": "/v1/saved-charts/saved_1795025764860-ysuuygs9",
     "headers": {
       "Authorization": "Bearer <access-token>",
       "Idempotency-Key": "example_11"
@@ -14,7 +14,7 @@
       "removed": true
     },
     "meta": {
-      "requestId": "req_1794768149804-9qid803q",
+      "requestId": "req_1795025764864-9ty9wk0r",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

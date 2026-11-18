@@ -1,6 +1,8 @@
 # Current Nekath frontend API
 
-App version **1.0.0** · Verified against current source, 16 November 2026. All active calls use the persistent local mock API. `/v1` paths are the mapping defined by the unused HTTP adapter, not deployed endpoints. No login provider is configured.
+App version **1.0.0** · Updated against source, 18 November 2026. All active calls use the persistent local mock API. `/v1` paths are the mapping defined by the unused HTTP adapter, not deployed endpoints. No login provider is configured.
+
+See [Insights API](INSIGHTS-API.md) for the complete new feature contracts and examples.
 
 ## Endpoint mapping
 
@@ -17,6 +19,11 @@ GET inputs are query parameters; path IDs are removed from request bodies. Mock 
 | Saved charts | `GET /profiles/:profileId/saved-charts`; `POST /profiles/:profileId/saved-charts`; `DELETE /saved-charts/:id` | `{snapshotId,title}` on save → bookmarks / saved item / removed |
 | Reading report | `POST /readings`; `GET /readings/:id` | `{profileId,category}` → explanation, factors, period window, chart basis |
 | **Daily** | **`GET /profiles/:profileId/daily`** | **`localDate,placeId` → daily explanation, calendar, life period, helpful/caution intervals** |
+| Daily tathkala | `GET /profiles/:profileId/tathkala` | `localDate,localTime,placeId` → moment-chart fixture, timezone, tara bala/Moon/Chandrashtama examples, provenance |
+| Life timeline | `GET /profiles/:profileId/timeline` | `fromDate,toDate` → chronological sample dasha/transit/eclipse events; premium |
+| Birth-time sensitivity | `GET /profiles/:profileId/birth-time-sensitivity` | `uncertaintyMinutes=5|15|30` → sample ascendants and boundary warning |
+| Prediction journal | `GET/POST /profiles/:profileId/predictions`; `POST /predictions/:id/review` | list/record immutable future entries; review hit/partial/miss after the entire window; summary score |
+| PDF reports | `GET/POST /profiles/:profileId/reports`; `GET /reports/:id` | list/create/read immutable report content; frontend generates native PDF or browser print |
 | Ask history / new thread | `GET /profiles/:profileId/conversations`; `POST /conversations`; `GET /conversations/:id` | `{profileId,chartSnapshotId?}` on create → fixed person/chart context and messages |
 | Ask answer | `POST /conversations/:conversationId/messages` | `{text}` → saved question/answer, evidence references, remaining credits |
 | Plans / checkout | `GET /billing/products`; `POST /purchases` | `{productId,draft?}` on create → priced products / purchase intent |
@@ -49,7 +56,7 @@ GET /v1/profiles/:profileId/daily?localDate=2026-11-16&placeId=colombo
 | `intervals[].factors[].term/meaning` | Traditional term and understandable explanation |
 | `source` | Mock data provenance |
 
-Daily returns fixtures. The current app does not calculate Thath Kala charts or perform natal/transit comparisons. It has no moment-chart, Prashna or Pancha Pakshi screen/endpoint, and no Daily `basis`, `precision`, `capabilities` or factor change-time fields.
+Daily returns fixtures. The new `tathkala` endpoint and Daily section display a sample moment chart and comparison factors with explicit `basis` provenance; they do not calculate planetary positions or natal/transit comparisons. Prashna, Pancha Pakshi, change-time precision and notification delivery remain unimplemented. The original `daily` DTO is unchanged.
 
 ## Current access rules
 
@@ -63,4 +70,4 @@ First profile free; each additional person requires a fulfilled `extra_profile` 
 
 Mock errors use `ApiError` with `code`, `message`, `retryable` and optional `fields`; the HTTP adapter expects these under an `error` object on non-2xx responses. Screens show loading, retry and retained mutation input. Detailed content falls back to English for Sinhala/Tamil selections.
 
-[All 34 current request/response examples](NEKATH-API-CATALOG.json) · [Detailed operation and screen mapping](NEKATH-API-INTEGRATION.md).
+[All 43 current request/response examples](NEKATH-API-CATALOG.json) · [Detailed operation and screen mapping](NEKATH-API-INTEGRATION.md).

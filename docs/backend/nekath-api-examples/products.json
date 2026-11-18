@@ -18,6 +18,8 @@
         "description": [
           "All four reading categories",
           "Dasha periods and chart details",
+          "Life timeline and prediction journal",
+          "Create and export PDF reports",
           "3 question credits",
           "Matrimony access after demo verification"
         ]
@@ -58,7 +60,7 @@
       }
     ],
     "meta": {
-      "requestId": "req_1794768149809-mv8xsll0",
+      "requestId": "req_1795025764873-xbz55fhc",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

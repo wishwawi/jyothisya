@@ -2,7 +2,7 @@
   "operation": "cancelPurchase",
   "request": {
     "method": "POST",
-    "path": "/v1/purchases/order_1794768149814-2n1t3zx5/cancel",
+    "path": "/v1/purchases/order_1795025764885-0z7jfkbg/cancel",
     "headers": {
       "Authorization": "Bearer <access-token>",
       "Idempotency-Key": "example_18"
@@ -11,7 +11,7 @@
   },
   "response": {
     "data": {
-      "id": "order_1794768149814-2n1t3zx5",
+      "id": "order_1795025764885-0z7jfkbg",
       "product": {
         "id": "questions_5",
         "title": "5 more questions",
@@ -27,7 +27,7 @@
       "createdAt": "2026-11-16T00:00:00.000Z"
     },
     "meta": {
-      "requestId": "req_1794768149816-mys29g4a",
+      "requestId": "req_1795025764887-h2zz2hik",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

@@ -5,7 +5,7 @@
     "path": "/v1/favorites",
     "headers": {
       "Authorization": "Bearer <access-token>",
-      "Idempotency-Key": "example_29"
+      "Idempotency-Key": "example_38"
     },
     "body": {
       "matchId": "m_dinuka",
@@ -18,7 +18,7 @@
       "saved": true
     },
     "meta": {
-      "requestId": "req_1794768149837-rispvx2r",
+      "requestId": "req_1795025764965-qqyyrw00",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

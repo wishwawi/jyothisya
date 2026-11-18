@@ -3,6 +3,30 @@ export const routes: Record<
   Operation,
   { method: "GET" | "POST" | "PATCH" | "DELETE"; path: string; write?: boolean }
 > = {
+  tathkala: { method: "GET", path: "/profiles/:profileId/tathkala" },
+  timeline: { method: "GET", path: "/profiles/:profileId/timeline" },
+  birthTimeSensitivity: {
+    method: "GET",
+    path: "/profiles/:profileId/birth-time-sensitivity",
+  },
+  journal: { method: "GET", path: "/profiles/:profileId/predictions" },
+  createPrediction: {
+    method: "POST",
+    path: "/profiles/:profileId/predictions",
+    write: true,
+  },
+  reviewPrediction: {
+    method: "POST",
+    path: "/predictions/:id/review",
+    write: true,
+  },
+  reports: { method: "GET", path: "/profiles/:profileId/reports" },
+  createReport: {
+    method: "POST",
+    path: "/profiles/:profileId/reports",
+    write: true,
+  },
+  report: { method: "GET", path: "/reports/:id" },
   bootstrap: { method: "GET", path: "/bootstrap" },
   places: { method: "GET", path: "/places" },
   preferences: { method: "PATCH", path: "/me/preferences", write: true },

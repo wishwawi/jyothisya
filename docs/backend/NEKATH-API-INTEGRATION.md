@@ -1,6 +1,11 @@
 # Current Nekath API and screen mapping
 
-App version **1.0.0** · 16 November 2026 · Runtime: persistent mock API, local account and AsyncStorage schema v2. No remote backend or authentication provider is connected.
+App version **1.0.0** · 18 November 2026 · Runtime: persistent mock API, local account and AsyncStorage schema v2. No remote backend or authentication provider is connected.
+
+The new Daily tathkala, life timeline, prediction journal, birth-time sensitivity,
+premium access and PDF report flows are documented in [Insights API](INSIGHTS-API.md),
+including all nine new operation paths, DTO fields, validation, immutability,
+timezone handling, access rules and backend integration requirements.
 
 ## Source of truth
 
@@ -9,7 +14,8 @@ App version **1.0.0** · 16 November 2026 · Runtime: persistent mock API, local
 - [Mock operations and access rules](../../mobile/src/api/mock.ts)
 - [Current synthetic response data](../../mobile/src/api/fixtures.ts)
 - [Runtime storage](../../mobile/src/store.tsx)
-- [34 operation examples](NEKATH-API-CATALOG.json)
+- [43 operation examples](NEKATH-API-CATALOG.json)
+- [Insight DTOs](../../mobile/src/api/insights.ts) and [mock insight handlers](../../mobile/src/api/insight-operations.ts)
 
 Example JSON files are captured from the mock API. IDs are opaque and the examples are not a database import. Regenerate from the repository root with `yarn api:examples`; the generator checks that every operation has an example. The catalog's `v1-proposed` label refers to the unconnected HTTP mapping, not another app version.
 
@@ -81,7 +87,7 @@ Path parameters are removed from HTTP bodies; remaining GET inputs become query 
 
 **Ask:** Conversations bind person and chart snapshot. New conversations use latest Rasi unless a snapshot is supplied. Messages up to 2,000 characters receive contextual fixture answers for Lagna/Dasha/Hora/relationships or a generic fallback. One persisted answer consumes one credit; zero balance is rejected. Voice action inserts sample text without recording audio.
 
-**Daily:** Input is profileId/localDate/placeId. Response contains natal chartSnapshotId, location/timezone, headline/body/assessment, main/subperiod labels, five calendar rows and helpful/caution UTC intervals with activity and traditional term/meaning. The UI formats intervals in the chosen timezone. Calendar values and timing factors are fixtures. No Thath Kala, Prashna, Pancha Pakshi, ephemeris or transit-comparison engine is connected. No proposed evidence fields are part of this contract.
+**Daily:** Input is profileId/localDate/placeId. Response contains natal chartSnapshotId, location/timezone, headline/body/assessment, main/subperiod labels, five calendar rows and helpful/caution UTC intervals with activity and traditional term/meaning. The UI formats intervals in the chosen timezone. Calendar values and timing factors are fixtures. The new Daily tathkala section uses a separate `tathkala` operation with time selection, a sample moment chart and explicit `basis` provenance; see [Insights API](INSIGHTS-API.md). No ephemeris, real transit-comparison engine, Prashna or Pancha Pakshi calculation is connected.
 
 **Matrimony:** Paid plan plus demo verified status gates browsing. Verification uses NIC/Passport and selfie samples; a simulated pending review finishes as verified/rejected. Members are synthetic adults. Filters cover search/city/age. Details show selected Dina/Gana/Rajju compatibility examples; no complete Porondam calculator runs. Favourites and sent/withdrawn interests persist locally and send no external messages.
 

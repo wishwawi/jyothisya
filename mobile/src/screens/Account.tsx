@@ -190,7 +190,7 @@ export function Plans() {
   const action = useAction();
   return (
     <Page
-      title="Choose a plan"
+      title="Choose a premium plan"
       subtitle="One-time purchases. Profile creation and question credits are separate."
       back
     >

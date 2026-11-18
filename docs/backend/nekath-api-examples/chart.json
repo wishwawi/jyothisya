@@ -2,19 +2,19 @@
   "operation": "chart",
   "request": {
     "method": "GET",
-    "path": "/v1/profiles/p_1794768149791-y15lolqh/charts/rasi",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/charts/rasi",
     "headers": {
       "Authorization": "Bearer <access-token>"
     }
   },
   "response": {
     "data": {
-      "id": "chart_p_1794768149791-y15lolqh_1_rasi",
-      "profileId": "p_1794768149791-y15lolqh",
+      "id": "chart_p_1795025764849-0508hp4p_1_rasi",
+      "profileId": "p_1795025764849-0508hp4p",
       "profileRevision": 1,
       "profileName": "Nimali Perera",
       "kind": "rasi",
-      "createdAt": "2026-11-15T18:42:29.792Z",
+      "createdAt": "2026-11-18T18:16:04.849Z",
       "method": {
         "id": "parashari_demo",
         "label": "Parashari · Lahiri · demo fixtures",
@@ -255,7 +255,7 @@
       "source": "mock"
     },
     "meta": {
-      "requestId": "req_1794768149799-8b2nui01",
+      "requestId": "req_1795025764857-2d3gumml",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

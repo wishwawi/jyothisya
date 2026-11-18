@@ -9,15 +9,15 @@
   },
   "response": {
     "data": {
-      "id": "verification_1794768149830-ehiqlbhe",
+      "id": "verification_1795025764956-ioq99tae",
       "documentType": "NIC",
       "status": "verified",
-      "submittedAt": "2026-11-16T00:00:00.000Z",
-      "reviewReadyAt": 1794787202500,
+      "submittedAt": "2026-11-19T00:00:00.000Z",
+      "reviewReadyAt": 1795046402500,
       "outcome": "verified"
     },
     "meta": {
-      "requestId": "req_1794768149832-bifgvumf",
+      "requestId": "req_1795025764957-s6hxmpek",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

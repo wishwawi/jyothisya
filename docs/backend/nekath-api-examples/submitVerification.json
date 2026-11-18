@@ -5,7 +5,7 @@
     "path": "/v1/me/verification",
     "headers": {
       "Authorization": "Bearer <access-token>",
-      "Idempotency-Key": "example_25"
+      "Idempotency-Key": "example_34"
     },
     "body": {
       "documentType": "NIC",
@@ -16,15 +16,15 @@
   },
   "response": {
     "data": {
-      "id": "verification_1794768149830-ehiqlbhe",
+      "id": "verification_1795025764956-ioq99tae",
       "documentType": "NIC",
       "status": "pending",
-      "submittedAt": "2026-11-16T00:00:00.000Z",
-      "reviewReadyAt": 1794787202500,
+      "submittedAt": "2026-11-19T00:00:00.000Z",
+      "reviewReadyAt": 1795046402500,
       "outcome": "verified"
     },
     "meta": {
-      "requestId": "req_1794768149831-pu61niy9",
+      "requestId": "req_1795025764956-r106muqu",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

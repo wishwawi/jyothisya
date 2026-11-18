@@ -1,0 +1,46 @@
+{
+  "operation": "birthTimeSensitivity",
+  "request": {
+    "method": "GET",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p/birth-time-sensitivity?uncertaintyMinutes=15",
+    "headers": {
+      "Authorization": "Bearer <access-token>"
+    }
+  },
+  "response": {
+    "data": {
+      "profileId": "p_1795025764849-0508hp4p",
+      "chartSnapshotId": "chart_p_1795025764849-0508hp4p_1_rasi",
+      "uncertaintyMinutes": 15,
+      "crossesSignBoundary": true,
+      "samples": [
+        {
+          "offsetMinutes": -15,
+          "ascendant": "Kanya",
+          "degreeLabel": "29°10′ · sample"
+        },
+        {
+          "offsetMinutes": 0,
+          "ascendant": "Thula",
+          "degreeLabel": "1°40′ · sample"
+        },
+        {
+          "offsetMinutes": 15,
+          "ascendant": "Thula",
+          "degreeLabel": "4°10′ · sample"
+        }
+      ],
+      "basis": {
+        "source": "mock",
+        "method": "Parashari / Lahiri · demonstration v1",
+        "notice": "Illustrative data only. No planetary positions, transits or birth-time uncertainty have been calculated from your details."
+      }
+    },
+    "meta": {
+      "requestId": "req_1795025764919-rwqutzhb",
+      "source": "mock",
+      "localeUsed": "en",
+      "fallback": false
+    }
+  }
+}

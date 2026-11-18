@@ -2,10 +2,10 @@
   "operation": "updateProfile",
   "request": {
     "method": "PATCH",
-    "path": "/v1/profiles/p_1794768149791-y15lolqh",
+    "path": "/v1/profiles/p_1795025764849-0508hp4p",
     "headers": {
       "Authorization": "Bearer <access-token>",
-      "Idempotency-Key": "example_33"
+      "Idempotency-Key": "example_42"
     },
     "body": {
       "revision": 1,
@@ -27,14 +27,14 @@
       "place": "Kandy",
       "isExample": true,
       "placeId": "kandy",
-      "id": "p_1794768149791-y15lolqh",
+      "id": "p_1795025764849-0508hp4p",
       "revision": 2,
       "archived": false,
       "createdAt": "2026-11-16T00:00:00.000Z",
       "freeCategory": "love"
     },
     "meta": {
-      "requestId": "req_1794768149844-yxfu7p8e",
+      "requestId": "req_1795025764977-x7vw6g7s",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

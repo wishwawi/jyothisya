@@ -133,6 +133,54 @@
       "path": "/profiles/:profileId/daily",
       "example": "nekath-api-examples/daily.json"
     },
+    "tathkala": {
+      "method": "GET",
+      "path": "/profiles/:profileId/tathkala",
+      "example": "nekath-api-examples/tathkala.json"
+    },
+    "birthTimeSensitivity": {
+      "method": "GET",
+      "path": "/profiles/:profileId/birth-time-sensitivity",
+      "example": "nekath-api-examples/birthTimeSensitivity.json"
+    },
+    "timeline": {
+      "method": "GET",
+      "path": "/profiles/:profileId/timeline",
+      "example": "nekath-api-examples/timeline.json"
+    },
+    "createPrediction": {
+      "method": "POST",
+      "path": "/profiles/:profileId/predictions",
+      "write": true,
+      "example": "nekath-api-examples/createPrediction.json"
+    },
+    "reviewPrediction": {
+      "method": "POST",
+      "path": "/predictions/:id/review",
+      "write": true,
+      "example": "nekath-api-examples/reviewPrediction.json"
+    },
+    "journal": {
+      "method": "GET",
+      "path": "/profiles/:profileId/predictions",
+      "example": "nekath-api-examples/journal.json"
+    },
+    "createReport": {
+      "method": "POST",
+      "path": "/profiles/:profileId/reports",
+      "write": true,
+      "example": "nekath-api-examples/createReport.json"
+    },
+    "reports": {
+      "method": "GET",
+      "path": "/profiles/:profileId/reports",
+      "example": "nekath-api-examples/reports.json"
+    },
+    "report": {
+      "method": "GET",
+      "path": "/reports/:id",
+      "example": "nekath-api-examples/report.json"
+    },
     "submitVerification": {
       "method": "POST",
       "path": "/me/verification",

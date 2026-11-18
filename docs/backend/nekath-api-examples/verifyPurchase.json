@@ -2,7 +2,7 @@
   "operation": "verifyPurchase",
   "request": {
     "method": "POST",
-    "path": "/v1/purchases/order_1794768149810-0v4avq38/verify",
+    "path": "/v1/purchases/order_1795025764876-x4d4p2f0/verify",
     "headers": {
       "Authorization": "Bearer <access-token>",
       "Idempotency-Key": "example_17"
@@ -16,7 +16,7 @@
   },
   "response": {
     "data": {
-      "id": "order_1794768149810-0v4avq38",
+      "id": "order_1795025764876-x4d4p2f0",
       "product": {
         "id": "graha",
         "title": "Graha",
@@ -26,6 +26,8 @@
         "description": [
           "All four reading categories",
           "Dasha periods and chart details",
+          "Life timeline and prediction journal",
+          "Create and export PDF reports",
           "3 question credits",
           "Matrimony access after demo verification"
         ]
@@ -34,7 +36,7 @@
       "createdAt": "2026-11-16T00:00:00.000Z"
     },
     "meta": {
-      "requestId": "req_1794768149813-9lusloss",
+      "requestId": "req_1795025764882-tde5tctu",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false

@@ -23,11 +23,16 @@
         "plan": "free",
         "freeProfileEligible": true,
         "questionCredits": 0,
-        "readingsUnlocked": false
+        "readingsUnlocked": false,
+        "features": {
+          "timeline": false,
+          "journal": false,
+          "pdfReports": false
+        }
       }
     },
     "meta": {
-      "requestId": "req_1794768149753-rhb5ev1e",
+      "requestId": "req_1795025764764-7zb4bdgr",
       "source": "mock",
       "localeUsed": "en",
       "fallback": false
